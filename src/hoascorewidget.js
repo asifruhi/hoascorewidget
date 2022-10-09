@@ -4,7 +4,7 @@
         if (widgetDiv) {
             var hoaId = widgetDiv.getAttribute('data-hoa-id');
             if (hoaId) {
-                fetch(`https://www.oaintel.com/_functions/hoascore?hoa-id=${hoaId}`, {method: 'GET', mode: 'cors', cache: 'no-cache', credentials: 'omit', headers: {'Accept': 'application/json'}, redirect: 'follow'})
+                fetch(`https://www.hoa-score.com/_functions/hoascore?hoa-id=${hoaId}`, {method: 'GET', mode: 'cors', cache: 'no-cache', credentials: 'omit', headers: {'Accept': 'application/json'}, redirect: 'follow'})
                   .then((response) => {
                       return response.json();
                   })
